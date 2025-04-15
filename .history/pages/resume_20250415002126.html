@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Resume</title>
+    <meta name="description" content="Professional resume of Kevin Cai">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Additional CSS for resume page -->
+    <style>
+        .resume-section {
+            margin-bottom: 3rem;
+        }
+        
+        .resume-section__title {
+            margin-bottom: 1.5rem;
+            font-size: var(--h3-font-size);
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .resume-section__title::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            background-color: var(--primary-color);
+            left: 0;
+            top: 0;
+        }
+        
+        .resume-item {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            border-left: 1px solid var(--border-color);
+            position: relative;
+        }
+        
+        .resume-item::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            left: -6px;
+            top: 5px;
+        }
+        
+        .resume-item__title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resume-item__subtitle {
+            color: var(--primary-color);
+            font-size: var(--normal-font-size);
+            margin-bottom: 0.5rem;
+        }
+        
+        .resume-item__date {
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+            margin-bottom: 0.75rem;
+        }
+        
+        .resume-item__description {
+            font-size: var(--normal-font-size);
+        }
+        
+        .download-resume {
+            text-align: center;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="../index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link active">Resume</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link">Projects</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">My Resume</h2>
+                
+                <div class="download-resume">
+                    <a href="../assets/documents/Kevin Cai - Resume 2025-26 Software Engineering.pdf" class="btn btn-primary" target="_blank">Download PDF Resume</a>
+                </div>
+                
+                <!-- Education Section -->
+                <div class="resume-section">
+                    <h3 class="resume-section__title">Education</h3>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Computer Science B.S., Mathematics Minor</h4>
+                        <h5 class="resume-item__subtitle">The Pennsylvania State University - University Park</h5>
+                        <p class="resume-item__date">2022 - 2026</p>
+                        <p class="resume-item__description">
+                            <strong>Relevant Coursework:</strong> O.O.P. with Web-Based Applications, Data Structures and Algorithms, Systems Programming, <br> 
+                            Programming Language Concepts, Operating Systems, Numerical Computations, Intro to Mathematical Statistics
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Experience Section -->
+                <div class="resume-section">
+                    <h3 class="resume-section__title">Work Experience</h3>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Hackathon Contestant</h4>
+                        <h5 class="resume-item__subtitle">HackPSU</h5>
+                        <p class="resume-item__date">March 2025</p>
+                        <p class="resume-item__description">
+                            • Designed an award-winning Augmented Reality project “LiDARcade” for iOS during a 24-hour hackathon.<br>
+                            • Collaborated with a team of 5 to solve the Penn State Institute of Computational and Data Science LiDAR 
+                            challenge.<br>
+                            • Utilized Swift, and SwiftUI for Frontend development, ARKit for LiDAR support, and Scikit-learn with ML Core for data analysis.
+                        </p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Student Developer</h4>
+                        <h5 class="resume-item__subtitle">Penn State NittanyAI</h5>
+                        <p class="resume-item__date">September 2023 - May 2024</p>
+                        <p class="resume-item__description">
+                            • Constructed projects such as a stock market prediction model that achieved prediction accuracy of 90.24% <br>
+                            • Created documentation for content management system<br>
+                            • Provided technical support to faculty and staff
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Web Development Assistant</h4>
+                        <h5 class="resume-item__subtitle">University IT Department</h5>
+                        <p class="resume-item__date">September 2023 - May 2024</p>
+                        <p class="resume-item__description">
+                            • Assisted in maintaining the university website using HTML, CSS, and JavaScript<br>
+                            • Created documentation for content management system<br>
+                            • Provided technical support to faculty and staff
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Skills Section (Summary) -->
+                <div class="resume-section">
+                    <h3 class="resume-section__title">Skills</h3>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Technical Skills</h4>
+                        <p class="resume-item__description">
+                            <strong>Programming Languages:</strong> JavaScript, TypeScript, Python, HTML, CSS, Java, C/C++, Swift, R, SQL, MATLAB<br>
+                            <strong>Frameworks:</strong> React.js, Node.js, Next.js, Angular, SwiftUI, PyTorch, NumPy, Scikit-learn, Core ML<br>
+                            <strong>Tools:</strong> Git, GitHub, VS Code, VMWare, Figma, LateX, Microsoft Office<br>
+                            <strong>Databases:</strong> Supabase, MongoDB, MySQL
+                        </p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Soft Skills</h4>
+                        <p class="resume-item__description">
+                            Communication, Leadership, Team Building, Creative Thinking, Conflict Resolution, Time Management
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Languages</h4>
+                        <p class="resume-item__description">
+                            English (Native), Chinese (Fluent), French (Conversational), Spanish (Classroom Study) 
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Certifications and Awards -->
+                <div class="resume-section">
+                    <h3 class="resume-section__title">Certifications & Awards</h3>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Web Development Certification</h4>
+                        <h5 class="resume-item__subtitle">Certificate Authority</h5>
+                        <p class="resume-item__date">2023</p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <h4 class="resume-item__title">Hackathon Winner</h4>
+                        <h5 class="resume-item__subtitle">University Hackathon</h5>
+                        <p class="resume-item__date">2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
