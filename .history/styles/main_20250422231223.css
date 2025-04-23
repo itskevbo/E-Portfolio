@@ -515,35 +515,7 @@ button {
     gap: 1.5rem;
 }
 
-/*=============== PAGE TRANSITIONS ===============*/
-/** Simple page transitions for now 
- *  My goal is to try to add more complex animations later
- */
-.page-transition {
-    animation: fadeIn 1.0s ease forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-.fade-out {
-    animation: fadeOut 1.0s ease forwards;
-}
+/*=============== MEDIA QUERIES ===============*/
 
 /*=============== MEDIA QUERIES ===============*/
 /* For medium devices */

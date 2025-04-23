@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollActiveLink();
     initProjectsFilter();
     initContactForm();
-    initScrollReveal();
 });
 
 /*==================== NAVIGATION MENU ====================*/
@@ -131,7 +130,8 @@ function initContactForm() {
 }
 
 /*==================== PAGE TRANSITIONS ====================*/
-// Simple page transitions for now, my goal is to try to add more complex animations later
+// Simple page transitions for now 
+// My goal is to try to add more complex animations later
 function initPageTransitions() {
     // Get all navigation links
     const navLinks = document.querySelectorAll('a:not([target="_blank"])');
@@ -166,45 +166,10 @@ function initPageTransitions() {
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 // This is a placeholder for future implementation
+// You might want to use a library like ScrollReveal for this
 function initScrollReveal() {
-    // Initialize ScrollReveal
-    const sr = ScrollReveal({
-        origin: 'bottom',
-        distance: '60px',
-        duration: 2000,
-        delay: 200,
-        reset: false // Set to true if you want animations to repeat on scroll up
-    });
-    
-    // Hero section
-    sr.reveal('.hero__title', {});
-    sr.reveal('.hero__subtitle', { delay: 300 });
-    sr.reveal('.hero__description', { delay: 400 });
-    sr.reveal('.hero__actions', { delay: 500 });
-    sr.reveal('.hero__image', { origin: 'right', delay: 600 });
-    
-    // Section titles
-    sr.reveal('.section__title', {});
-    
-    // Project cards
-    sr.reveal('.project-card', {
-        interval: 200, // Delay between each card
-        origin: 'bottom'
-    });
-    
-    // About page
-    sr.reveal('.about__text', { origin: 'left' });
-    sr.reveal('.about__image', { origin: 'right' });
-    
-    // Skills
-    sr.reveal('.skills__category', {
-        interval: 200,
-        origin: 'bottom'
-    });
-    
-    // Contact form
-    sr.reveal('.contact__info', { origin: 'left' });
-    sr.reveal('.contact__form', { origin: 'right' });
+    // This would be implemented later
+    console.log('ScrollReveal not implemented yet');
 }
 
 /*==================== INTERSECTION OBSERVER FOR LAZY LOADING ====================*/

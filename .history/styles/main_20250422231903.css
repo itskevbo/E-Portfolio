@@ -516,8 +516,8 @@ button {
 }
 
 /*=============== PAGE TRANSITIONS ===============*/
-/** Simple page transitions for now 
- *  My goal is to try to add more complex animations later
+/**  Simple page transitions for now, 
+ *  
  */
 .page-transition {
     animation: fadeIn 1.0s ease forwards;

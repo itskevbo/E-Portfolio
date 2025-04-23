@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initProjectsFilter();
     initContactForm();
     initScrollReveal();
+
 });
 
 /*==================== NAVIGATION MENU ====================*/
