@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Contact</title>
+    <meta name="description" content="Get in touch with Kevin Cai">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="../index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link">Projects</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link active">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section Component -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__info-top">
+                            <div class="contact__info-item">
+                                <span class="icon">Email:</span>
+                                <a href="mailto:kevincai357@gmail.com">kevincai357@gmail.com</a>
+                            </div>
+                            <div class="contact__info-item">
+                                <span class="icon">Location:</span>
+                                <span>Dallas, Texas</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/kevincai357/" class="contact__social-link" target="_blank">
+                                <img src="../assets/icons/linkedin.svg" alt="LinkedIn" class="contact__social-icon">
+                            </a>
+                            <a href="https://github.com/itskevbo" class="contact__social-link" target="_blank">
+                                <img src="../assets/icons/github.svg" alt="GitHub" class="contact__social-icon">
+                            </a>
+                            <a href="#" class="contact__social-link" target="_blank">
+                                <img src="../assets/icons/instagram.svg" alt="Instagram" class="contact__social-icon">
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

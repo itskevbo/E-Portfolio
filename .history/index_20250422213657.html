@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Home</title>
+    <meta name="description" content="Professional portfolio showcasing my projects and skills">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Google Fonts (example) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link active">Home</a></li>
+                    <li class="header__nav-item"><a href="pages/about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="pages/resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="pages/projects.html" class="header__nav-link">Projects</a></li>
+                    <li class="header__nav-item"><a href="pages/contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Component -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Hi, I'm <span class="highlight">Kevin Cai</span></h1>
+                    <p class="hero__subtitle">Software Developer & Designer</p>
+                    <p class="hero__description">I build engaging digital experiences with clean, efficient code.</p>
+                    <div class="hero__actions">
+                        <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="pages/contact.html" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero__image" style="width: 400px; height: 400px; overflow: hidden; border-radius: 20px;">
+                    <img src="assets/images/placeholder.jpeg" alt="Hero Image" class="hero__image-img" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Featured Projects Preview Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Featured Projects</h2>
+                <div class="projects__grid">
+                    <!-- Only show 2 featured projects on homepage -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <!-- Placeholder for project image -->
+                            <div class="project-card__image-placeholder"></div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Featured Project 1</h3>
+                            <p class="project-card__description">Short project description goes here.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">GitHub</span>
+                                </a>
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="design">
+                        <div class="project-card__image">
+                            <!-- Placeholder for project image -->
+                            <div class="project-card__image-placeholder"></div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Featured Project 2</h3>
+                            <p class="project-card__description">Short project description goes here.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Accessibility</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">Behance</span>
+                                </a>
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">Case Study</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="pages/projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
