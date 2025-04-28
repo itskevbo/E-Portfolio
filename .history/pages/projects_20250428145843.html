@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Projects</title>
+    <meta name="description" content="Explore Kevin Cai's projects and portfolio work">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="../index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link">Projects</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Projects Section Component -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">My Projects</h2>
+                <div class="projects__filter">
+                    <button class="projects__filter-btn active" data-filter="all">All</button>
+                    <button class="projects__filter-btn" data-filter="web">Web</button>
+                    <button class="projects__filter-btn" data-filter="app">App</button>
+                    <button class="projects__filter-btn" data-filter="design">Design</button>
+                    <button class="projects__filter-btn" data-filter="writing">Writing</button>
+                </div>
+                <div class="projects__grid">
+                    <!-- Project Card Component 1 -->
+                    <div class="project-card" data-category="app">
+                        <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
+                            <!-- Placeholder for project image -->
+                            <img src="../assets/images/lidarcade_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">LIDARcade</h3>
+                            <p class="project-card__description">AR-powered arcade action for a better cause.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Swift</span>
+                                <span class="tag">SwiftUI</span>
+                                <span class="tag">ARKit</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/itskevbo/LIDARcade.git" class="project-card__link" target="_blank">
+                                    <span class="icon">GitHub</span>
+                                </a>
+                                <a href="https://devpost.com/software/lidarcade" class="project-card__link" target="_blank">
+                                    <span class="icon">DevPost</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card Component 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
+                            <!-- Placeholder for project image -->
+                            <img src="../assets/images/sst_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Simple Subscription Tracker</h3>
+                            <p class="project-card__description">Keeping track of your subscription needs.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">Databases</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/itskevbo/Simple-Subscription-Tracker.git" class="project-card__link" target="_blank">
+                                    <span class="icon">GitHub</span>
+                                </a>
+                                <a href="https://simple-subscription-tracker.vercel.app/" class="project-card__link" target="_blank">
+                                    <span class="icon">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card Component 3 -->
+                    <div class="project-card" data-category="writing">
+                        <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
+                            <!-- Placeholder for project image -->
+                            <img src="../assets/images/lidarcade_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Definition and Description Paper</h3>
+                            <p class="project-card__description">UI/UX design for an e-commerce platform with focus on accessibility.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Technical Writing</span>
+                                <span class="tag">Definition</span>
+                                <span class="tag">Description</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">Sample Writings</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card Component 4 -->
+                    <div class="project-card" data-category="writing">
+                        <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
+                            <!-- Placeholder for project image -->
+                            <img src="../assets/images/lidarcade_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Instruction Set Paper</h3>
+                            <p class="project-card__description">Full-stack web application with user dashboard and data visualization.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Technical Writing</span>
+                                <span class="tag">Instructions</span>
+                                <span class="tag">Document Design</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" target="_blank">
+                                    <span class="icon">Sample Writings</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

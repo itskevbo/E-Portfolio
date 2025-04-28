@@ -18,6 +18,8 @@ e-portfolio/
 ├── pages/              # Folder for other pages
 │   ├── about.html      # Biographical and skills page
 │   ├── projects.html   # Technical projects and writing samples
+│   │       ├── writing_samples.html    # Writing sample viewing area
+│   │       └── reflections.html        # Reflections of projects and writing samples
 │   ├── resume.html     # Web version of my resume
 │   └── contact.html    # Contact info
 ├── styles/             # CSS files
