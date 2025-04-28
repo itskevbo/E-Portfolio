@@ -3,38 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Cai | Home</title>
-    <meta name="description" content="Professional portfolio showcasing my projects and skills">
+    <title>Kevin Cai | Projects</title>
+    <meta name="description" content="Explore Kevin Cai's projects and portfolio work">
     
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="../assets/images/favicon.ico">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     
-    <!-- Google Fonts (example) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Scroll Reveal (ScrollReveal.js) -->
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    
+    <!-- Additional CSS for sub-navigation -->
+    <style>
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .sub-nav__list {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .sub-nav__item {
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        
+        .sub-nav__link {
+            font-weight: var(--font-medium);
+            font-size: var(--normal-font-size);
+        }
+        
+        .sub-nav__link.active {
+            color: var(--primary-color);
+        }
+        
+        .sub-nav__link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
     <!-- Header Component -->
     <header class="header" id="header">
         <div class="container">
             <div class="header__logo">
-                <a href="index.html" class="logo">KC</a>
+                <a href="../index.html" class="logo">KC</a>
             </div>
             
             <nav class="header__nav" id="nav-menu">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav-link active">Home</a></li>
-                    <li class="header__nav-item"><a href="pages/about.html" class="header__nav-link">About</a></li>
-                    <li class="header__nav-item"><a href="pages/projects.html" class="header__nav-link">Projects</a></li>
-                    <li class="header__nav-item"><a href="pages/resume.html" class="header__nav-link">Resume</a></li>
-                    <li class="header__nav-item"><a href="pages/contact.html" class="header__nav-link">Contact</a></li>
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link active">Projects</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
                 </ul>
                 
                 <div class="header__nav-toggle" id="nav-toggle">
@@ -47,37 +84,32 @@
     </header>
 
     <main>
-        <!-- Hero Section Component -->
-        <section class="hero" id="home">
+        <!-- Projects Section Component -->
+        <section class="projects section" id="projects">
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Hi, I'm <span class="highlight">Kevin Cai</span></h1>
-                    <p class="hero__subtitle">Computer Science & Mathematics</p>
-                    <p class="hero__description">I help build engaging digital experiences with clean, efficient code.</p>
-                    <div class="hero__actions">
-                        <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="pages/contact.html" class="btn btn-outline">Contact Me</a>
-                    </div>
+                <h2 class="section__title">My Projects</h2>
+                
+                <!-- Sub Navigation for Projects/Writing Samples/Reflections -->
+                <div class="sub-nav">
+                    <ul class="sub-nav__list">
+                        <li class="sub-nav__item"><a href="projects.html" class="sub-nav__link active">Projects</a></li>
+                        <li class="sub-nav__item"><a href="writing_samples.html" class="sub-nav__link">Writing Samples</a></li>
+                        <li class="sub-nav__item"><a href="reflections.html" class="sub-nav__link">Reflections</a></li>
+                    </ul>
                 </div>
-                <div class="hero__image" style="width: 480px; height: 480px; overflow: hidden; border-radius: 20px;">
-                    <img src="assets/images/profile_pic.jpeg" alt="Hero Image" class="hero__image-img" style="width: 100%; height: 100%; object-fit: cover;">
+                
+                <div class="projects__filter">
+                    <button class="projects__filter-btn active" data-filter="all">All</button>
+                    <button class="projects__filter-btn" data-filter="web">Web</button>
+                    <button class="projects__filter-btn" data-filter="app">App</button>
+                    <button class="projects__filter-btn" data-filter="writing">Writing</button>
                 </div>
-            </div>
-        </section>
-
-
-
-        <!-- Featured Projects Preview Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section__title">Featured Projects</h2>
                 <div class="projects__grid">
-
-                    <!-- Featured Project 1 -->
-                    <div class="project-card" data-category="web">
+                    <!-- Project Card Component 1 -->
+                    <div class="project-card" data-category="app">
                         <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
                             <!-- Placeholder for project image -->
-                            <img src="assets/images/lidarcade_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="../assets/images/lidarcade_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">LIDARcade</h3>
@@ -98,11 +130,11 @@
                         </div>
                     </div>
                     
-                    <!-- Featured Project 2 -->
-                    <div class="project-card" data-category="design">
+                    <!-- Project Card Component 2 -->
+                    <div class="project-card" data-category="web">
                         <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
                             <!-- Placeholder for project image -->
-                            <img src="assets/images/sst_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="../assets/images/sst_logo.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Simple Subscription Tracker</h3>
@@ -122,12 +154,34 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Featured Project 3 -->
+                    
+                    <!-- Project Card Component 3 -->
                     <div class="project-card" data-category="writing">
                         <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
                             <!-- Placeholder for project image -->
-                            <img src="assets/images/inst_set.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="../assets/images/def_desc.jpeg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Definition and Description Paper</h3>
+                            <p class="project-card__description">A descriptive paper on the automotive ECU tuning process.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Technical Writing</span>
+                                <span class="tag">Definition</span>
+                                <span class="tag">Description</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="writing_samples.html" class="project-card__link">
+                                    <span class="icon">Writing Samples</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card Component 4 -->
+                    <div class="project-card" data-category="writing">
+                        <div class="project-card__image" style="width: 365px; height: 200px; overflow: hidden;">
+                            <!-- Placeholder for project image -->
+                            <img src="../assets/images/inst_set.jpg" alt="Project Card Image" class="project-card_image_img" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Instruction Set Paper</h3>
@@ -144,10 +198,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="pages/projects.html" class="btn btn-primary">View All Projects</a>
                 </div>
             </div>
         </section>
@@ -167,6 +217,6 @@
     </footer>
 
     <!-- JS -->
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

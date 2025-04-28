@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Writing Samples</title>
+    <meta name="description" content="Writing samples by Kevin Cai">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Additional CSS for sub-navigation and writing samples -->
+    <style>
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .sub-nav__list {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .sub-nav__item {
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        
+        .sub-nav__link {
+            font-weight: var(--font-medium);
+            font-size: var(--normal-font-size);
+        }
+        
+        .sub-nav__link.active {
+            color: var(--primary-color);
+        }
+        
+        .sub-nav__link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .writing-sample {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: var(--container-color);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .writing-sample__header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .writing-sample__title {
+            margin-bottom: 0.5rem;
+            font-size: var(--h3-font-size);
+        }
+        
+        .writing-sample__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-color-light);
+            font-size: var(--small-font-size);
+        }
+        
+        .writing-sample__content {
+            line-height: 1.8;
+        }
+        
+        .writing-sample__content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .writing-sample__content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .writing-sample__content ul,
+        .writing-sample__content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .writing-sample__content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .writing-sample__footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="../index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link active">Projects</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Writing Samples Section Component -->
+        <section class="section" id="writing-samples">
+            <div class="container">
+                <h2 class="section__title">Writing Samples</h2>
+                
+                <!-- Sub Navigation for Projects/Writing Samples/Reflections -->
+                <div class="sub-nav">
+                    <ul class="sub-nav__list">
+                        <li class="sub-nav__item"><a href="projects.html" class="sub-nav__link">Projects</a></li>
+                        <li class="sub-nav__item"><a href="writing_samples.html" class="sub-nav__link active">Writing Samples</a></li>
+                        <li class="sub-nav__item"><a href="reflections.html" class="sub-nav__link">Reflections</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Writing Sample 1: Definition and Description Paper -->
+                <article class="writing-sample">
+                    <header class="writing-sample__header">
+                        <h3 class="writing-sample__title">Definition and Description Paper: ECU Tuning in Modern Vehicles</h3>
+                        <div class="writing-sample__meta">
+                            <span>Course: ENGL 202C</span>
+                            <span>Date: March 2025</span>
+                            <span>Category: Technical Writing</span>
+                        </div>
+                    </header>
+                    
+                    <div class="writing-sample__content">
+                        <p>ECU tuning is the process of modifying a vehicle's Engine Control Unit (ECU) software to optimize engine performance, fuel efficiency, and overall drivability. The ECU, which acts as the brain of a vehicle's engine management system, controls critical parameters such as fuel injection timing, air-fuel ratios, boost pressure in turbocharged engines, and ignition timing. By adjusting these parameters, automotive enthusiasts and professionals can unlock hidden potential in stock vehicles or customize the driving experience to their preferences.</p>
+                        
+                        <h3>Understanding the Engine Control Unit</h3>
+                        <p>The modern vehicle's ECU is a sophisticated computer that processes inputs from various sensors throughout the engine and drivetrain. These sensors monitor conditions such as intake air temperature, engine temperature, throttle position, crankshaft position, and oxygen content in the exhaust. Using these inputs, the ECU makes real-time adjustments to maintain optimal engine operation under varying conditions while balancing performance, emissions, and fuel economy according to the manufacturer's specifications.</p>
+                        
+                        <h3>The Tuning Process</h3>
+                        <p>Professional ECU tuning typically involves connecting specialized hardware and software to the vehicle's OBD-II diagnostic port, which provides access to the ECU. Tuners can then read the factory calibration (often called a "map" or "tune"), make adjustments to various parameters, and write these changes back to the ECU. The process requires a deep understanding of engine dynamics, as changes to one parameter often necessitate adjustments to others to maintain reliability and drivability.</p>
+                        
+                        <p>Modern tuning is typically performed on a dynamometer (or "dyno"), which allows the tuner to measure the vehicle's power output while making incremental changes to the ECU parameters. This iterative process of adjustment and testing enables tuners to find the optimal balance between performance gains and reliability. Additionally, custom tunes can be tailored to specific modifications such as upgraded turbochargers, fuel systems, or exhaust components, allowing these aftermarket parts to work in harmony with the engine management system.</p>
+                        
+                        <h3>Benefits and Considerations</h3>
+                        <p>When properly executed, ECU tuning can yield significant benefits, including increased horsepower and torque, improved throttle response, better fuel economy at cruising speeds, and elimination of factory restrictions such as top speed limiters. However, it's crucial to understand that aggressive tunes that prioritize maximum performance may reduce engine longevity, increase component wear, and potentially void manufacturer warranties.</p>
+                        
+                        <p>Furthermore, emissions compliance is a critical consideration, as modifications to engine parameters can affect the vehicle's emissions output. In many jurisdictions, modifications that increase emissions beyond legal limits are prohibited for street-driven vehicles, making it essential for tuners to balance performance gains with regulatory compliance.</p>
+                        
+                        <h3>Evolution of Tuning Technology</h3>
+                        <p>The field of ECU tuning has evolved significantly over the past decade. Early tuning required physical replacement of the ECU's EPROM chips, while modern methods utilize software interfaces that communicate directly with the ECU. Additionally, many enthusiasts now employ "flash tuning" devices that can store multiple calibrations and allow drivers to switch between tunes for different driving conditions or fuel grades.</p>
+                        
+                        <p>Advanced tuning platforms now incorporate features such as real-time monitoring, data logging, and diagnostics, giving tuners unprecedented insight into engine operation. Some cutting-edge systems even offer self-learning capabilities, where the ECU can make automatic adjustments based on environmental conditions and driving patterns.</p>
+                        
+                        <h3>Conclusion</h3>
+                        <p>ECU tuning represents the intersection of automotive engineering and digital technology, allowing enthusiasts and professionals to optimize vehicle performance beyond factory settings. While the process has become more accessible with modern tools, it remains both an art and a science that requires careful consideration of the trade-offs between performance, reliability, and compliance. For those with the proper knowledge and equipment, however, ECU tuning offers a pathway to personalize and enhance the driving experience in ways the original manufacturers may not have intended.</p>
+                    </div>
+                    
+                    <footer class="writing-sample__footer">
+                        <a href="reflections.html#definition-description" class="btn btn-outline">Read My Reflection</a>
+                    </footer>
+                </article>
+                
+                <!-- Writing Sample 2: Instruction Set Paper -->
+                <article class="writing-sample">
+                    <header class="writing-sample__header">
+                        <h3 class="writing-sample__title">Instruction Set: Connecting an External Monitor to Your Computer</h3>
+                        <div class="writing-sample__meta">
+                            <span>Course: ENGL 202C</span>
+                            <span>Date: February 2025</span>
+                            <span>Category: Technical Instructions</span>
+                        </div>
+                    </header>
+                    
+                    <div class="writing-sample__content">
+                        <h3>Introduction</h3>
+                        <p>This instruction set will guide you through the process of connecting an external monitor to your computer. Whether you're looking to extend your workspace with a dual-monitor setup, mirror your display for a presentation, or simply use a larger screen, this guide will help you connect your external monitor correctly and configure it for optimal use.</p>
+                        
+                        <h3>Required Equipment</h3>
+                        <ul>
+                            <li>Computer (laptop or desktop)</li>
+                            <li>External monitor</li>
+                            <li>Appropriate video cable (HDMI, DisplayPort, USB-C, or VGA depending on your devices)</li>
+                            <li>Power cable for the external monitor</li>
+                            <li>Adapter (if necessary, e.g., USB-C to HDMI adapter for newer laptops)</li>
+                        </ul>
+                        
+                        <h3>Step 1: Identify Available Ports</h3>
+                        <p>Before connecting any cables, identify the video output ports on your computer and the input ports on your monitor. Common connection types include:</p>
+                        <ul>
+                            <li><strong>HDMI:</strong> A flat, wide connector that supports both audio and video signals. Most common in modern devices.</li>
+                            <li><strong>DisplayPort:</strong> Similar in size to HDMI but with one corner cut at an angle. Typically found on higher-end monitors and graphics cards.</li>
+                            <li><strong>USB-C/Thunderbolt:</strong> A small, oval-shaped connector found on newer laptops. May require an adapter for connecting to standard monitors.</li>
+                            <li><strong>VGA:</strong> An older, blue 15-pin connector that only carries video signals (no audio).</li>
+                            <li><strong>DVI:</strong> A white connector with multiple pins, available in several variations (DVI-D, DVI-I, etc.).</li>
+                        </ul>
+                        
+                        <h3>Step 2: Choose the Appropriate Cable</h3>
+                        <p>Select a cable that matches both your computer's output port and your monitor's input port. For the best quality, prioritize digital connections (HDMI, DisplayPort, or USB-C) over analog ones (VGA). If your computer and monitor have different port types, you may need an adapter or converter cable.</p>
+                        
+                        <h3>Step 3: Position Your Monitor</h3>
+                        <p>Place your external monitor in your desired location, ensuring it's on a stable surface with adequate ventilation. Position it at a comfortable viewing angle and height to minimize neck strain. Ideally, the top of the screen should be at or slightly below eye level.</p>
+                        
+                        <h3>Step 4: Connect Power to the Monitor</h3>
+                        <ol>
+                            <li>Locate the power cable that came with your monitor.</li>
+                            <li>Connect one end to the power input on your monitor (usually located on the back or bottom).</li>
+                            <li>Plug the other end into a power outlet.</li>
+                            <li>If your monitor has a power button, do not turn it on yet.</li>
+                        </ol>
+                        
+                        <h3>Step 5: Connect the Video Cable</h3>
+                        <ol>
+                            <li>With both your computer and monitor powered off, connect one end of your video cable to the appropriate output port on your computer.</li>
+                            <li>Connect the other end to the corresponding input port on your monitor.</li>
+                            <li>Ensure the connections are secure on both ends.</li>
+                        </ol>
+                        
+                        <h3>Step 6: Power On and Set Up</h3>
+                        <ol>
+                            <li>Turn on your external monitor.</li>
+                            <li>Turn on your computer (or wake it from sleep if already powered on).</li>
+                            <li>Your computer should automatically detect the external monitor. If it doesn't, press the input source button on your monitor to select the correct input.</li>
+                        </ol>
+                        
+                        <h3>Step 7: Configure Display Settings</h3>
+                        <p><strong>For Windows:</strong></p>
+                        <ol>
+                            <li>Right-click on an empty area of your desktop and select "Display settings."</li>
+                            <li>Windows should show your displays with numbers identifying each one. If you're unsure which is which, click "Identify" to display numbers on each screen.</li>
+                            <li>Under "Multiple displays," choose your preferred display mode:
+                                <ul>
+                                    <li><strong>Duplicate:</strong> Shows the same content on both displays.</li>
+                                    <li><strong>Extend:</strong> Expands your desktop across both displays, allowing you to move windows between them.</li>
+                                    <li><strong>Show only on 1/2:</strong> Uses only one display while turning off the other.</li>
+                                </ul>
+                            </li>
+                            <li>If using "Extend," you can drag the display boxes to arrange them according to the physical positioning of your monitors.</li>
+                            <li>Adjust additional settings like resolution, orientation, and scaling as needed.</li>
+                            <li>Click "Apply" to save your changes.</li>
+                        </ol>
+                        
+                        <p><strong>For macOS:</strong></p>
+                        <ol>
+                            <li>Click the Apple menu and select "System Preferences."</li>
+                            <li>Click "Displays."</li>
+                            <li>Go to the "Arrangement" tab.</li>
+                            <li>Uncheck "Mirror Displays" to extend your desktop across both screens, or check it to duplicate your display.</li>
+                            <li>You can drag the display icons to match their physical arrangement on your desk.</li>
+                            <li>On each display's preferences window, adjust resolution, brightness, and other settings as needed.</li>
+                        </ol>
+                        
+                        <h3>Step 8: Fine-Tune Monitor Settings</h3>
+                        <p>Use your monitor's built-in controls (usually buttons on the front or bottom edge) to adjust:</p>
+                        <ul>
+                            <li>Brightness and contrast</li>
+                            <li>Color calibration</li>
+                            <li>Input source (if needed)</li>
+                            <li>Speaker volume (if your monitor has built-in speakers)</li>
+                        </ul>
+                        
+                        <h3>Troubleshooting Common Issues</h3>
+                        <p><strong>No signal detected:</strong></p>
+                        <ul>
+                            <li>Ensure both your computer and monitor are powered on.</li>
+                            <li>Verify that the cable is securely connected at both ends.</li>
+                            <li>Check that you've selected the correct input source on your monitor.</li>
+                            <li>Try a different cable or port if available.</li>
+                        </ul>
+                        
+                        <p><strong>Poor image quality:</strong></p>
+                        <ul>
+                            <li>Adjust the resolution in your display settings to match your monitor's native resolution.</li>
+                            <li>Update your graphics drivers.</li>
+                            <li>Use a higher-quality digital connection if possible (HDMI or DisplayPort instead of VGA).</li>
+                        </ul>
+                        
+                        <p><strong>Monitor not detected:</strong></p>
+                        <ul>
+                            <li>Press the Windows key + P (Windows) or Command + F1 (Mac) to quickly access display mode options.</li>
+                            <li>Check for and install updates for your operating system and graphics drivers.</li>
+                            <li>Restart your computer with the monitor already connected.</li>
+                        </ul>
+                        
+                        <h3>Conclusion</h3>
+                        <p>You've successfully connected and configured an external monitor with your computer. This setup enhances productivity by providing more screen space and can significantly improve your computing experience. For optimal ergonomics, remember to position your monitors at eye level and take regular breaks to reduce eye strain during extended use.</p>
+                    </div>
+                    
+                    <footer class="writing-sample__footer">
+                        <a href="reflections.html#instruction-set" class="btn btn-outline">Read My Reflection</a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

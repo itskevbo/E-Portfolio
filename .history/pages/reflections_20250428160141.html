@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cai | Reflections</title>
+    <meta name="description" content="Reflections on Kevin Cai's projects and writing samples">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Additional CSS for sub-navigation and reflections -->
+    <style>
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .sub-nav__list {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .sub-nav__item {
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        
+        .sub-nav__link {
+            font-weight: var(--font-medium);
+            font-size: var(--normal-font-size);
+        }
+        
+        .sub-nav__link.active {
+            color: var(--primary-color);
+        }
+        
+        .sub-nav__link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .reflection {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: var(--container-color);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .reflection__header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .reflection__title {
+            margin-bottom: 0.5rem;
+            font-size: var(--h3-font-size);
+        }
+        
+        .reflection__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-color-light);
+            font-size: var(--small-font-size);
+        }
+        
+        .reflection__content {
+            line-height: 1.8;
+        }
+        
+        .reflection__content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .reflection__content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .reflection__content ul,
+        .reflection__content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .reflection__content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .reflection__footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="../index.html" class="logo">KC</a>
+            </div>
+            
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="projects.html" class="header__nav-link active">Projects</a></li>
+                    <li class="header__nav-item"><a href="resume.html" class="header__nav-link">Resume</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header__nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Reflections Section Component -->
+        <section class="section" id="reflections">
+            <div class="container">
+                <h2 class="section__title">Reflections</h2>
+                
+                <!-- Sub Navigation for Projects/Writing Samples/Reflections -->
+                <div class="sub-nav">
+                    <ul class="sub-nav__list">
+                        <li class="sub-nav__item"><a href="projects.html" class="sub-nav__link">Projects</a></li>
+                        <li class="sub-nav__item"><a href="writing_samples.html" class="sub-nav__link">Writing Samples</a></li>
+                        <li class="sub-nav__item"><a href="reflections.html" class="sub-nav__link active">Reflections</a></li>
+                    </ul>
+                </div>
+
+                <!-- Reflection 1: LIDARcade -->
+                <article class="reflection" id="technical-writing-journey">
+                    <header class="reflection__header">
+                        <h3 class="reflection__title">Reflection on Hackathon Project: LIDARcade</h3>
+                        <div class="reflection__meta">
+                            <span>Course: HackPSU</span>
+                            <span>Date: March 2025</span>
+                            <span>Category: Competition</span>
+                        </div>
+                    </header>
+                    
+                    <div class="reflection__content">
+                        <p>As a Computer Science major with a Mathematics minor, I initially viewed technical writing as a supplementary skill rather than a core component of my professional development. However, ENGL 202C has transformed my perspective on technical communication, helping me recognize that even the most brilliant technical ideas have limited impact if they cannot be effectively communicated to their intended audience.</p>
+                        
+                        <h3>The Intersection of Technical Knowledge and Communication</h3>
+                        <p>Throughout this course, I've come to understand that technical expertise and communication skills are not separate domains but deeply interconnected aspects of professional effectiveness. In computer science, we often work with abstract concepts, complex systems, and specialized knowledge that needs to be made accessible to various stakeholders—clients, team members from different backgrounds, end users, and sometimes the general public.</p>
+                        
+                        <p>The assignments in this course, particularly the definition/description paper and instruction set, have given me practical experience in translating technical knowledge into clear, user-centered communication. I've learned to consider the needs, background knowledge, and goals of my audience, and to adjust my communication approach accordingly.</p>
+                        
+                        <h3>Growth in Specific Communication Skills</h3>
+                        <p>Looking back at my work this semester, I can identify several areas where I've grown as a technical communicator:</p>
+                        
+                        <ul>
+                            <li><strong>Organization and Structure:</strong> I've improved my ability to organize complex information logically, using hierarchical structures, section divisions, and clear transitions to guide readers through technical content.</li>
+                            <li><strong>Precision and Clarity:</strong> I've developed a stronger sense of how to write with precision, avoiding ambiguity and ensuring that my technical descriptions and instructions can be interpreted accurately.</li>
+                            <li><strong>Audience Awareness:</strong> I've become more adept at analyzing audience needs and adjusting my communication style, level of detail, and explanatory approach to meet those needs effectively.</li>
+                            <li><strong>Visual Communication:</strong> I've gained appreciation for how document design, formatting, and visual elements can enhance comprehension of technical information.</li>
+                            <li><strong>Iterative Improvement:</strong> I've learned the value of reviewing and refining technical documents, considering different perspectives and use cases to identify and address potential points of confusion.</li>
+                        </ul>
+                        
+                        <h3>Application to My Computer Science Career</h3>
+                        <p>As I move forward in my computer science education and career, I see numerous applications for the technical communication skills I've developed:</p>
+                        
+                        <p><strong>Software Documentation:</strong> Whether writing API documentation, user manuals, or internal technical specifications, the principles of clear organization, precision, and audience awareness will be essential for creating effective documentation.</p>
+                        
+                        <p><strong>Project Proposals and Reports:</strong> The ability to clearly communicate technical approaches, requirements, and outcomes will be valuable when proposing new projects or reporting on completed work.</p>
+                        
+                        <p><strong>Team Collaboration:</strong> In cross-functional teams, I'll need to explain technical concepts to colleagues with diverse backgrounds and translate business requirements into technical specifications.</p>
+                        
+                        <p><strong>User Interface Design:</strong> Understanding how users interpret instructions and information will inform how I design user interfaces and error messages, making software more intuitive and user-friendly.</p>
+                        
+                        <h3>Technical Communication in a Digital Portfolio</h3>
+                        <p>Creating this digital portfolio as part of my coursework has been an exercise in technical communication itself. I've had to consider how to present my technical skills and projects to potential employers or clients, organizing information in a way that highlights my capabilities while being accessible and engaging.</p>
+                        
+                        <p>The portfolio demonstrates not just what I know, but how effectively I can communicate that knowledge—a crucial skill in today's collaborative and information-driven tech industry. By integrating my writing samples and reflections, I've created a more comprehensive representation of my abilities than code samples alone could provide.</p>
+                        
+                        <h3>Continuing Development</h3>
+                        <p>As I continue to develop as a computer scientist and technical communicator, I plan to further refine my skills in several areas:</p>
+                        
+                        <ul>
+                            <li>Creating more sophisticated technical documentation, including developer guides and technical specifications</li>
+                            <li>Developing data visualization skills to communicate complex information graphically</li>
+                            <li>Practicing verbal technical communication through presentations and demos</li>
+                            <li>Exploring how to effectively communicate about emerging technologies like AI and machine learning to non-technical audiences</li>
+                        </ul>
+                        
+                        <p>ENGL 202C has provided a foundation for these goals by helping me see technical communication not as a separate skill from my technical knowledge, but as an integral part of how I apply that knowledge effectively in a professional context. In an industry where collaboration and clear communication are as important as technical expertise, these skills will be invaluable assets throughout my career.</p>
+                    </div>
+                </article>
+
+                <!-- Reflection 2: Simple Subscription Tracker -->
+                <article class="reflection" id="technical-writing-journey">
+                    <header class="reflection__header">
+                        <h3 class="reflection__title">My Technical Writing Journey: Connecting Computer Science and Communication</h3>
+                        <div class="reflection__meta">
+                            <span>Course: CMPSC 221</span>
+                            <span>Date: November 2023</span>
+                            <span>Category: Course Reflection</span>
+                        </div>
+                    </header>
+                    
+                    <div class="reflection__content">
+                        <p>As a Computer Science major with a Mathematics minor, I initially viewed technical writing as a supplementary skill rather than a core component of my professional development. However, ENGL 202C has transformed my perspective on technical communication, helping me recognize that even the most brilliant technical ideas have limited impact if they cannot be effectively communicated to their intended audience.</p>
+                        
+                        <h3>The Intersection of Technical Knowledge and Communication</h3>
+                        <p>Throughout this course, I've come to understand that technical expertise and communication skills are not separate domains but deeply interconnected aspects of professional effectiveness. In computer science, we often work with abstract concepts, complex systems, and specialized knowledge that needs to be made accessible to various stakeholders—clients, team members from different backgrounds, end users, and sometimes the general public.</p>
+                        
+                        <p>The assignments in this course, particularly the definition/description paper and instruction set, have given me practical experience in translating technical knowledge into clear, user-centered communication. I've learned to consider the needs, background knowledge, and goals of my audience, and to adjust my communication approach accordingly.</p>
+                        
+                        <h3>Growth in Specific Communication Skills</h3>
+                        <p>Looking back at my work this semester, I can identify several areas where I've grown as a technical communicator:</p>
+                        
+                        <ul>
+                            <li><strong>Organization and Structure:</strong> I've improved my ability to organize complex information logically, using hierarchical structures, section divisions, and clear transitions to guide readers through technical content.</li>
+                            <li><strong>Precision and Clarity:</strong> I've developed a stronger sense of how to write with precision, avoiding ambiguity and ensuring that my technical descriptions and instructions can be interpreted accurately.</li>
+                            <li><strong>Audience Awareness:</strong> I've become more adept at analyzing audience needs and adjusting my communication style, level of detail, and explanatory approach to meet those needs effectively.</li>
+                            <li><strong>Visual Communication:</strong> I've gained appreciation for how document design, formatting, and visual elements can enhance comprehension of technical information.</li>
+                            <li><strong>Iterative Improvement:</strong> I've learned the value of reviewing and refining technical documents, considering different perspectives and use cases to identify and address potential points of confusion.</li>
+                        </ul>
+                        
+                        <h3>Application to My Computer Science Career</h3>
+                        <p>As I move forward in my computer science education and career, I see numerous applications for the technical communication skills I've developed:</p>
+                        
+                        <p><strong>Software Documentation:</strong> Whether writing API documentation, user manuals, or internal technical specifications, the principles of clear organization, precision, and audience awareness will be essential for creating effective documentation.</p>
+                        
+                        <p><strong>Project Proposals and Reports:</strong> The ability to clearly communicate technical approaches, requirements, and outcomes will be valuable when proposing new projects or reporting on completed work.</p>
+                        
+                        <p><strong>Team Collaboration:</strong> In cross-functional teams, I'll need to explain technical concepts to colleagues with diverse backgrounds and translate business requirements into technical specifications.</p>
+                        
+                        <p><strong>User Interface Design:</strong> Understanding how users interpret instructions and information will inform how I design user interfaces and error messages, making software more intuitive and user-friendly.</p>
+                        
+                        <h3>Technical Communication in a Digital Portfolio</h3>
+                        <p>Creating this digital portfolio as part of my coursework has been an exercise in technical communication itself. I've had to consider how to present my technical skills and projects to potential employers or clients, organizing information in a way that highlights my capabilities while being accessible and engaging.</p>
+                        
+                        <p>The portfolio demonstrates not just what I know, but how effectively I can communicate that knowledge—a crucial skill in today's collaborative and information-driven tech industry. By integrating my writing samples and reflections, I've created a more comprehensive representation of my abilities than code samples alone could provide.</p>
+                        
+                        <h3>Continuing Development</h3>
+                        <p>As I continue to develop as a computer scientist and technical communicator, I plan to further refine my skills in several areas:</p>
+                        
+                        <ul>
+                            <li>Creating more sophisticated technical documentation, including developer guides and technical specifications</li>
+                            <li>Developing data visualization skills to communicate complex information graphically</li>
+                            <li>Practicing verbal technical communication through presentations and demos</li>
+                            <li>Exploring how to effectively communicate about emerging technologies like AI and machine learning to non-technical audiences</li>
+                        </ul>
+                        
+                        <p>ENGL 202C has provided a foundation for these goals by helping me see technical communication not as a separate skill from my technical knowledge, but as an integral part of how I apply that knowledge effectively in a professional context. In an industry where collaboration and clear communication are as important as technical expertise, these skills will be invaluable assets throughout my career.</p>
+                    </div>
+                </article>
+                
+                <!-- Reflection 3: Definition and Description Paper -->
+                <article class="reflection" id="definition-description">
+                    <header class="reflection__header">
+                        <h3 class="reflection__title">Reflection on Definition and Description Paper: ECU Tuning</h3>
+                        <div class="reflection__meta">
+                            <span>Course: ENGL 202C</span>
+                            <span>Date: March 2025</span>
+                            <span>Related to: Technical Writing Sample</span>
+                        </div>
+                    </header>
+                    
+                    <div class="reflection__content">
+                        <p>Writing the definition and description paper on ECU tuning presented a unique challenge: how to convey complex technical information about automotive engineering to readers who might not have a background in the field. This assignment pushed me to refine my ability to translate specialized knowledge into accessible language without sacrificing technical accuracy.</p>
+                        
+                        <h3>Rhetorical Choices and Audience Considerations</h3>
+                        <p>When I began this assignment, I had to make several important rhetorical decisions. First, I needed to determine the appropriate level of technical detail. Since ECU tuning involves complex interactions between mechanical systems, electronic components, and software, I could have easily overwhelmed readers with jargon and intricate details. Instead, I chose to focus on explaining the core concepts in accessible terms while providing enough technical specificity to demonstrate the complexity and sophistication of the process.</p>
+                        
+                        <p>I visualized my audience as technically curious individuals who might not have automotive engineering backgrounds. This audience profile led me to include explanatory sections like "Understanding the Engine Control Unit" that established foundational knowledge before discussing more specialized aspects of tuning. I also made sure to define technical terms when first introduced and used analogies (like referring to the ECU as "the brain" of the engine management system) to help readers grasp unfamiliar concepts.</p>
+                        
+                        <h3>Organizational Strategy</h3>
+                        <p>The structure of this paper was carefully considered to build reader understanding progressively. I began with a clear definition of ECU tuning to establish the subject, then moved to explain the hardware components involved, followed by the process itself, and finally the implications and evolution of the technology. This organization follows a logical progression that helps readers build a mental model of the subject matter step by step.</p>
+                        
+                        <p>I chose to use section headings to segment the information into digestible chunks and to help readers navigate the document, especially since some readers might be interested in specific aspects of ECU tuning rather than reading the entire paper sequentially. The headings also served to signal transitions between major topics and help maintain clarity throughout the paper.</p>
+                        
+                        <h3>Balancing Technical Detail and Accessibility</h3>
+                        <p>One of the most challenging aspects of this assignment was determining how much technical detail to include. Too little would result in an oversimplified explanation that wouldn't properly convey the complexity of ECU tuning, while too much might alienate readers without the necessary background knowledge. I tried to strike this balance by introducing technical concepts gradually and contextualizing them within the broader process.</p>
+                        
+                        <p>For example, rather than simply listing the parameters that can be modified during tuning, I explained why these parameters matter and how changes affect vehicle performance. This approach allows readers to understand not just what tuning involves, but why it's done and what outcomes can be expected.</p>
+                        
+                        <h3>Learning and Growth</h3>
+                        <p>This assignment helped me develop several important technical communication skills. I improved my ability to distill complex technical information into clear, precise language without oversimplification. I also strengthened my skill in organizing technical content logically to build reader understanding progressively.</p>
+                        
+                        <p>Additionally, I gained experience in balancing technical accuracy with accessibility—a crucial skill for any technical communicator. The process of researching and writing this paper also deepened my own understanding of ECU tuning, reinforcing the idea that effectively explaining a concept to others requires a thorough grasp of the subject matter.</p>
+                        
+                        <h3>Application to Future Work</h3>
+                        <p>The skills I developed through this assignment will be valuable in my future career in computer science and software development. As technology becomes increasingly complex and specialized, the ability to explain technical concepts clearly to non-specialists is becoming more important than ever. Whether I'm writing documentation, preparing presentations, or collaborating with cross-functional teams, I'll need to communicate technical information effectively to audiences with varying levels of domain knowledge.</p>
+                        
+                        <p>This assignment has also reinforced my understanding of how technical communication principles apply across different domains. The strategies I used to explain ECU tuning could be applied equally well to explaining software architecture, machine learning algorithms, or any other technical subject. The fundamental challenge remains the same: making complex information accessible without sacrificing accuracy or depth.</p>
+                    </div>
+                    
+                    <footer class="reflection__footer">
+                        <a href="writing_samples.html#definition-description" class="btn btn-outline">Read the Paper</a>
+                    </footer>
+                </article>
+                
+                <!-- Reflection 4: Instruction Set Paper -->
+                <article class="reflection" id="instruction-set">
+                    <header class="reflection__header">
+                        <h3 class="reflection__title">Reflection on Instruction Set: Connecting an External Monitor</h3>
+                        <div class="reflection__meta">
+                            <span>Course: ENGL 202C</span>
+                            <span>Date: February 2025</span>
+                            <span>Related to: Technical Instructions Sample</span>
+                        </div>
+                    </header>
+                    
+                    <div class="reflection__content">
+                        <p>Creating an effective instruction set for connecting an external monitor to a computer required me to think carefully about clarity, accessibility, and user experience. While the process might seem straightforward to those with technical backgrounds, I recognized that many users find hardware connections and display configuration challenging. This assignment taught me valuable lessons about technical communication and user-centered documentation.</p>
+                        
+                        <h3>User-Centered Approach</h3>
+                        <p>My primary goal for this instruction set was to create a document that would be useful to a wide range of users, from those with limited technical experience to more advanced users who might simply need a quick reference. This required me to consider different knowledge levels, potential pain points, and common mistakes that users might encounter during the process.</p>
+                        
+                        <p>To address these considerations, I included comprehensive contextual information at the beginning of the document, explaining what external monitors are used for and what benefits they provide. This helps users understand not just how to connect a monitor, but why they might want to. I also included a detailed equipment list to ensure users had everything they needed before starting.</p>
+                        
+                        <h3>Clarity and Precision in Instructions</h3>
+                        <p>Technical instructions require exceptional clarity and precision. Ambiguous language can lead to confusion, frustration, and potential errors. Throughout the document, I focused on using clear, direct language and avoiding ambiguity. For example, rather than simply instructing users to "connect the cables," I provided specific steps for identifying ports, selecting appropriate cables, and ensuring secure connections.</p>
+                        
+                        <p>I also paid careful attention to the sequence of instructions, ensuring that each step logically followed from the previous one and that the overall process flowed coherently from start to finish. The step-by-step structure, with numbered lists for sequential operations and bullet points for parallel choices, helps users navigate the document easily and track their progress through the process.</p>
+                        
+                        <h3>Visual Organization and Document Design</h3>
+                        <p>Although this assignment didn't require actual images, I structured the document with visual organization in mind. The use of headings and subheadings creates a clear hierarchy of information, allowing users to quickly scan the document and locate specific sections. The consistent formatting of steps and lists also enhances readability and helps users distinguish between different types of information.</p>
+                        
+                        <p>I also considered how the instruction set might be used in practice. Users might reference it while actively connecting hardware, so information needs to be easily accessible and scannable. The troubleshooting section at the end acknowledges that the process might not go perfectly and provides solutions to common problems, addressing the reality that technical procedures rarely go exactly as planned.</p>
+                        
+                        <h3>Accommodating Different Systems and Configurations</h3>
+                        <p>One of the most challenging aspects of this assignment was accounting for the wide variety of hardware and software configurations that users might have. Computers and monitors come with different ports, operating systems have different interfaces for display settings, and users may have various adapters or specialized equipment.</p>
+                        
+                        <p>I addressed this challenge by first explaining the general principles that apply across systems, then providing specific instructions for common configurations (Windows and macOS). I also included information about different port types and connection standards to help users identify what they're working with. This approach strikes a balance between comprehensiveness and usability, providing enough information to cover most scenarios without overwhelming users with excessive detail.</p>
+                        
+                        <h3>Learning and Application</h3>
+                        <p>This assignment reinforced the importance of empathy in technical communication. By putting myself in the user's position, I was able to anticipate questions, concerns, and potential points of confusion. This user-centered approach is essential in all forms of technical communication, from software documentation to product manuals.</p>
+                        
+                        <p>The process also highlighted the value of iterative refinement. After completing my initial draft, I reviewed it multiple times, considering different user perspectives and scenarios. This led to several improvements, particularly in the troubleshooting section, which I expanded to address more potential issues.</p>
+                        
+                        <p>As a computer science student, I often find myself explaining technical concepts to friends and family. This assignment has given me valuable tools for making those explanations more effective and accessible. The principles of clear organization, precise language, and user-centered design apply not just to written instructions but to all forms of technical communication, including verbal explanations and presentations.</p>
+                    </div>
+                    
+                    <footer class="reflection__footer">
+                        <a href="writing_samples.html#instruction-set" class="btn btn-outline">Read the Instructions</a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Kevin Cai. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
